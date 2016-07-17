@@ -1,2 +1,1 @@
-# project-euler
-mathematical exercises in Python
+https://projecteuler.net/

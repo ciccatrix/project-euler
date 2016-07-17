@@ -1,5 +1,5 @@
 from sys import argv
-fileName, num = argv
+fileName, inputNum = argv
 
 def maxPrimeFactor (num):
 	maxpf = 2
@@ -14,4 +14,4 @@ def maxPrimeFactor (num):
 		print num
 	return maxpf
 
-print maxPrimeFactor (int(num))
+print maxPrimeFactor (int(inputNum))

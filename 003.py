@@ -2,7 +2,7 @@
 # What is the largest prime factor of the number 600851475143 ?
 
 from sys import argv
-fileName, num = argv
+fileName, inputNum = argv
 
 def isDivisibleBy (num, listDiv):
 	for i in range (len (listDiv)):
@@ -59,5 +59,5 @@ def listMax (lst):
 			numMax = lst [i]
 	return numMax
 		
-print listMax(findPrimeFactorsOfBigNum (int(num) ) ) 
+print listMax(findPrimeFactorsOfBigNum (int(inputNum) ) ) 
 	

@@ -5,6 +5,26 @@ from sys import argv
 import math, time
 fileName, inputNum = argv
 
+def remainderFromFactors (num, factors):
+	for i in range (len (factors)):
+		temp = num
+		if temp % factors [i] == 0:
+			num /= factors [i]
+
+	return num
+
+def findSmallestMultiple (upToNum):
+	factors = [2]
+	for i in range (2, upToNum + 1):
+		remainder = remainderFromFactors(i, factors)
+		if remainder != 0:
+			factors.append(remainder)
+	num = 1
+	for i in range (len(factors)):
+		num = num * factors[i]
+
+	return num
+
 tStart = time.time()
-print "yes"
+print findSmallestMultiple(int(inputNum))
 print (str((time.time() - tStart)))
